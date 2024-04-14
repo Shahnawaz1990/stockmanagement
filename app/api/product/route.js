@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function GET(request) {
     // Replace the uri string with your connection string.
     // const uri = "mongodb+srv://mongodb:lhcnVIXb5RORctnt@cluster0.m7zfzzf.mongodb.net/";
-    const uri = "mongodb+srv://netflixclone:netflixclone@cluster0.m7zfzzf.mongodb.net/";
+    const uri = "enter_mongo_conn_string";
     const client = new MongoClient(uri);
         try {
             const database = client.db('stock');
@@ -25,7 +25,7 @@ export async function POST(request) {
     let body = await request.json()
     // console.log(body);
     // const uri = "mongodb+srv://mongodb:lhcnVIXb5RORctnt@cluster0.m7zfzzf.mongodb.net/";
-    const uri = "mongodb+srv://netflixclone:netflixclone@cluster0.m7zfzzf.mongodb.net/";
+    const uri = "enter_mongo_conn_string";
     const client = new MongoClient(uri);
         try {
             const database = client.db('stock');

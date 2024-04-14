@@ -7,7 +7,7 @@ export async function POST(request) {
     let {action, slug, initialQuantity} = await request.json()
     console.log(action, slug, initialQuantity);
     // const uri = "mongodb+srv://mongodb:lhcnVIXb5RORctnt@cluster0.m7zfzzf.mongodb.net/";
-    const uri = "mongodb+srv://netflixclone:netflixclone@cluster0.m7zfzzf.mongodb.net/";
+    const uri = "enter_mongo_conn_string";
     const client = new MongoClient(uri);
         try {
             const database = client.db('stock');
